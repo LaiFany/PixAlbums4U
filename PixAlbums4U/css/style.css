@@ -1,0 +1,243 @@
+*{
+   outline: 0px dotted blue;
+   min-height: 10px;
+   font-family: 'Quicksand', sans-serif;
+}
+
+#usermainpage-images {
+   float : left;
+   text-align : center;
+   box-shadow : 0 0 5px #ccc;
+   position : relative;
+}
+
+#usermainpage-images img{
+   display : inline;
+   height : auto;
+   width : 100%;
+}
+
+#usermainpage-images #topimageinfo{
+   position : absolute;
+   top : 5px;
+   left : 5px;
+   text-align : left;
+}
+
+#usermainpage-images #bottomimageinfo{
+   position : absolute;
+   bottom : 2px;
+   width : 100%;
+}
+	
+#usermainpage-images .imagename a{
+   text-align : center;
+   text-decoration : none;
+   color: white;
+   width : auto;
+   visibility : hidden;
+   opacity : 0;
+}
+
+#usermainpage-images .imagedesc{
+   text-align : center;
+   color: white;
+   width : auto;
+   visibility : hidden;
+   opacity : 0;
+}
+
+#usermainpage-images .imageauthor a{
+   text-decoration: none;
+   color: white;
+   text-align : center;
+   width : auto;
+   visibility : hidden;
+   opacity : 0;
+}
+		
+#usermainpage-images:hover .imagename a{
+   font-size : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition : 1s;
+}
+
+#usermainpage-images:hover .imagedesc{
+   visibility : visible;
+   opacity : 1;
+   transition : 1s;
+}
+
+#usermainpage-images:hover .imageauthor a{
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   font-size: 40px;
+   text-shadow: 1px 0px 20px white;
+   visibility : visible;
+   opacity : 1;
+   transition : 1s;
+}
+
+#usermainpage-images:hover #topimageinfo{
+   padding : 1px 2px 1px 2px;
+   background-color: rgba(0, 0, 0, .4);
+   border-radius : 12px;
+   transition : 1s;
+}
+
+#usermainpage-images:hover #bottomimageinfo{
+   background-color: rgba(0, 0, 0, .4);
+   border-radius : 12px;
+   transition : 1s;
+}
+
+.album_thumbnail, .image_thumbnail{
+   float: left;
+}
+
+.album_thumbnail a:hover, .image_thumbnail a:hover{
+   text-decoration: none;
+}
+
+.photoslider{
+   position : relative;
+   background-color : rgba(0, 0, 0, .9);
+   width : 100%;
+   margin-top: 61px;
+}
+
+.photoslider a{
+   text-decoration : none;
+   color : white;
+}
+
+.photoslider #image{
+   width : 700px;
+   height : 500px;
+   margin : auto;
+   padding : 50px 0 50px 0;
+   position: relative;
+   bottom: 50px;
+}
+
+.photoslider #image img{
+   max-width : 700px;
+   height : 500px;
+}
+
+.photoslider .next{
+   position : absolute;
+   right : 5%;
+   top : 300px;
+   height : auto;
+   width : auto;
+   border-radius: 100px;
+   background-color: rgba(192, 192, 192, .4);
+   visibility : hidden;
+   opacity : 0;
+   padding : 5px 5px 5px 5px;
+   text-align : center;
+   border-radius : 5px;
+}
+
+.photoslider .prev{
+   position : absolute;
+   top : 300px;
+   left : 5%;
+   height : auto;
+   width : auto;
+   border-radius: 100px;
+   background-color: rgba(192, 192, 192, .4);
+   visibility : hidden;
+   opacity : 0;
+   padding : 5px 5px 5px 5px;
+   text-align : center;
+   border-radius : 5px;
+}
+
+.photoslider:hover .next{
+   font-weight: bold;
+   visibility : visible;
+   opacity : 1;
+   transition : 1s;
+   text-decoration: none;
+}
+
+.photoslider:hover .prev{
+   font-weight: bold;
+   visibility : visible;
+   opacity : 1;
+   transition : 1s;
+   text-decoration: none;
+}
+
+.photopageinfo{
+   color : white;
+}
+
+.photopageinfo .photopage-photoname{
+   text-align : center;
+   font-size : 35px;
+   background-color: rgba(0, 0, 0, .7);
+}
+
+.photopageinfo .photopage-photodesc{
+   text-align : center;
+   font-size : 20px;
+   font-style : italic;
+   font-weight : bold;
+   background-color: rgba(0, 0, 0, .7);
+}
+
+.photopageinfo .photopage-photodate{
+   text-align : center;
+   font-size : 20px;
+   font-weight : bold;
+   background-color: rgba(0, 0, 0, .7);
+}
+
+.photopageinfo .photopage-albumname{
+   text-align : center;
+   font-size : 20px;
+   font-weight : bold;
+   background-color: rgba(0, 0, 0, .7);
+}
+
+.photopageinfo .photopage-albumname a{
+text-decoration : none;
+color: white;
+}
+
+.photopageinfo .photopage-username{
+   text-align : center;
+   font-size : 20px;
+   font-weight : bold;
+   margin-bottom : 100px;
+   background-color: rgba(0, 0, 0, .7);
+}
+.photopageinfo .photopage-username a{
+   text-decoration : none;
+   color: white;
+}
+.photopageinfo .photopage-albumname a:hover{
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   font-size: 40px;
+   text-shadow: 1px 0px 20px white;
+   transition : 1s;
+}
+.photopageinfo .photopage-username a:hover{
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   font-size: 40px;
+   text-shadow: 1px 0px 20px white;
+   transition : 1s;
+}
+
+.container-fluid{
+	background-image : url("images/background_image.jpg");
+}
